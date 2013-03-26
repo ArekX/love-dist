@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="lovedist.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="lovedist"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="185"/>
+        <CursorPos X="62" Y="205"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="shellit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="shellit"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="7"/>
+        <CursorPos X="15" Y="18"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="266" Column="37" TopLine="255"/>
+      </Position1>
+      <Position2>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="324" Column="48" TopLine="306"/>
+      </Position2>
+      <Position3>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="327" Column="1" TopLine="306"/>
+      </Position3>
+      <Position4>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="325" Column="21" TopLine="306"/>
+      </Position4>
+      <Position5>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="327" Column="1" TopLine="306"/>
+      </Position5>
+      <Position6>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="257" Column="26" TopLine="242"/>
+      </Position6>
+      <Position7>
+        <Filename Value="shellit.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="261" Column="4" TopLine="253"/>
+      </Position8>
+      <Position9>
+        <Filename Value="lovedist.lpr"/>
+        <Caret Line="36" Column="30" TopLine="25"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>

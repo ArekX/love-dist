@@ -86,7 +86,7 @@ var
 begin
 
   WriteLn('LoveDist - Distribution Utility');
-  Writeln('Version: 1.0.0');
+  Writeln('Version: 1.1.2');
   Writeln('Made by Aleksandar Panic, arekusanda1@gmail.com');
 
   // parse parameters
@@ -138,7 +138,7 @@ begin
   zip := TZipper.Create;
   files := TStringList.Create;
   try
-    writeln(baseDir + DirectorySeparator + gamefolder);
+    writeln('Project Directory: ' + baseDir + DirectorySeparator + gamefolder);
     if DirectoryExists(baseDir + DirectorySeparator + gamefolder + '_work') then
        CleanWorkDir(baseDir + DirectorySeparator + gamefolder + '_work');
     MkDir(baseDir + DirectorySeparator + gamefolder + '_work');
@@ -246,15 +246,19 @@ begin
      CopyFile(baseDir + DirectorySeparator + 'OpenAL32.dll', baseDir + DirectorySeparator + distfolder + DirectorySeparator + 'OpenAL32.dll');
      CopyFile(baseDir + DirectorySeparator + 'SDL.dll', baseDir + DirectorySeparator + distfolder + DirectorySeparator + 'SDL.dll');
 
+     writeln('');
+
      Writeln('Distribution packagaging finished.');
 
    end;
 
    if DirectoryExists(baseDir + DirectorySeparator + gamefolder + '_work') then
        CleanWorkDir(baseDir + DirectorySeparator + gamefolder + '_work');
-
+   writeln('');
+   writeln('');
    Writeln('All operations completed. Press any key to end program.');
    ReadLn;
+
   // stop program loop
   Terminate;
 end;
@@ -263,6 +267,7 @@ procedure TMyApplication.ParseDir(path, luapath : string; fileString : TStringLi
 var
  fRec : TSearchRec;
 begin
+   if not (DirectoryExists(luapath)) then MkDir(luapath);
    if FindFirst(path + DirectorySeparator + '*.*', faAnyFile and faDirectory, fRec) = 0 then
    begin
      repeat
