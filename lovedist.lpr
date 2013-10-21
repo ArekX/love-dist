@@ -86,7 +86,7 @@ var
 begin
 
   WriteLn('LoveDist - Distribution Utility');
-  Writeln('Version: 1.1.2');
+  Writeln('Version: 1.1.3');
   Writeln('Made by Aleksandar Panic, arekusanda1@gmail.com');
 
   // parse parameters
@@ -160,7 +160,7 @@ begin
          fname := files.Strings[i];
          if ExtractFileExt(fname) = '.lua' then begin
             writeln('Compiling: ' + StringReplace(fname, baseDir, '', [rfIgnoreCase]));
-            ExecAndWait('"' + baseDir + DirectorySeparator + 'luac.exe' + '"', '-o "' + fname + '" "' + fname + '"', baseDir);
+            ExecAndWait('"' + baseDir + DirectorySeparator + 'luac.exe' + '"', '-s -o "' + fname + '" "' + fname + '"', baseDir);
          end;
       end;
     end;
